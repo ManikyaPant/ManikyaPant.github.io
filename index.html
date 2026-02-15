@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manikya Pant — ECE Student & Systems Developer at IIIT Hyderabad. Processor architecture, RISC-V, performance modeling." />
+  <meta name="keywords" content="Manikya Pant, IIIT Hyderabad, RISC-V, processor architecture, performance modeling, C++, systems developer" />
+  <meta name="author" content="Manikya Pant" />
+  <meta property="og:title" content="Manikya Pant — Developer & Engineer" />
+  <meta property="og:description" content="ECE Student at IIIT Hyderabad. Building performant systems and processor architecture tools." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://manikya-pant.github.io" />
+  <title>Manikya Pant — Developer & Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div id="c-dot"  aria-hidden="true"></div>
+  <div id="c-ring" aria-hidden="true"></div>
+  <div id="progress" role="progressbar" aria-label="Page scroll progress"></div>
+  <button id="btt" title="Back to top" aria-label="Back to top">↑</button>
+
+  <!-- LOADER -->
+  <div id="loader" role="status" aria-label="Loading">
+    <div class="ld-name" aria-hidden="true">
+      <span>M</span><span>P</span><span>.</span>
+    </div>
+    <div class="ld-bar-bg"><div class="ld-bar" id="lbar"></div></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="n-logo" aria-label="Home">MP<em>.</em></a>
+    <ul class="n-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#timeline">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="n-cta" id="hireCta">Get in Touch</button>
+    <button class="hburg" id="burger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#about"    class="mm">About</a>
+    <a href="#skills"   class="mm">Skills</a>
+    <a href="#projects" class="mm">Projects</a>
+    <a href="#timeline" class="mm">Experience</a>
+    <a href="#contact"  class="mm">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Hero">
+    <div class="h-bg"     aria-hidden="true"></div>
+    <div class="h-grid"   aria-hidden="true"></div>
+    <div class="h-bignum" aria-hidden="true" id="heroCounter">01</div>
+    <div class="h-tag">// ECE Student &amp; Systems Developer · IIIT Hyderabad</div>
+    <h1 class="h-name" id="heroName">
+      Manikya<br /><span class="out">Pant</span>
+    </h1>
+    <div class="h-sub">
+      <p class="h-role">
+        Building <em>performant systems</em><br />
+        and <em>processor architecture</em> tools.
+      </p>
+      <div class="h-scroll" aria-hidden="true">
+        <div class="s-line"></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="mq-bar" aria-hidden="true">
+    <div class="mq-track">
+      <span class="mq-item">Processor Architecture</span><span class="mq-dot">✦</span>
+      <span class="mq-item">RISC-V</span><span class="mq-dot">✦</span>
+      <span class="mq-item">Performance Modeling</span><span class="mq-dot">✦</span>
+      <span class="mq-item">C++</span><span class="mq-dot">✦</span>
+      <span class="mq-item">Systems Design</span><span class="mq-dot">✦</span>
+      <span class="mq-item">Open Source</span><span class="mq-dot">✦</span>
+      <span class="mq-item">LFX Mentorship</span><span class="mq-dot">✦</span>
+      <span class="mq-item">Processor Architecture</span><span class="mq-dot">✦</span>
+      <span class="mq-item">RISC-V</span><span class="mq-dot">✦</span>
+      <span class="mq-item">Performance Modeling</span><span class="mq-dot">✦</span>
+      <span class="mq-item">C++</span><span class="mq-dot">✦</span>
+      <span class="mq-item">Systems Design</span><span class="mq-dot">✦</span>
+      <span class="mq-item">Open Source</span><span class="mq-dot">✦</span>
+      <span class="mq-item">LFX Mentorship</span><span class="mq-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="sec" aria-labelledby="about-heading">
+    <div>
+      <div class="s-lbl rv">01 — About</div>
+      <h2 class="s-ttl rv d1" id="about-heading">WHO<br /><span class="d">I AM</span></h2>
+      <p class="a-body rv d2">
+        I'm a <strong>dual degree B.Tech + MS student</strong> in Electronics and
+        Communication Engineering at <strong>IIIT Hyderabad</strong>, India.
+        I work at the intersection of <strong>processor microarchitecture</strong>
+        and systems software — from pipelined RISC-V processors to
+        execution-driven performance modeling tools.
+        <br /><br />
+        I care about understanding how hardware <em>really</em> behaves — not just
+        simplified models or traces, but real effects like speculation,
+        pipeline flushes, and branch mispredictions.
+      </p>
+    </div>
+    <div class="stat-cards">
+      <div class="stat-c rv d1">
+        <div class="st-lbl">// Degree</div>
+        <div class="st-val" style="font-size:28px; color: var(--color-lime)">B.Tech + MS</div>
+        <div class="st-sub">Electronics &amp; Communication Engineering</div>
+      </div>
+      <div class="stat-c rv d2">
+        <div class="st-lbl">// Projects built</div>
+        <div class="st-val" data-count="6"><span class="cn">0</span><span class="u">+</span></div>
+        <div class="st-sub">Systems &amp; architecture projects</div>
+      </div>
+      <div class="stat-c rv d3">
+        <div class="st-lbl">// Status</div>
+        <div class="st-val st-available">Open to Opportunities</div>
+        <div class="st-sub">Research · Internship · Mentorship</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="sec" aria-labelledby="skills-heading">
+    <div class="sk-head">
+      <div>
+        <div class="s-lbl rv">02 — Skills</div>
+        <h2 class="s-ttl rv d1" id="skills-heading">TECH<br /><span class="d">STACK</span></h2>
+      </div>
+      <p class="sk-note rv d2">From competitive programming roots to processor design and performance modeling.</p>
+    </div>
+    <div class="sk-grid">
+      <div class="sk-col rv">
+        <div class="sk-ct">Languages</div>
+        <div class="sk-row"><span class="sk-n">C++</span><div class="sk-track"><div class="sk-fill" data-w=".93"></div></div></div>
+        <div class="sk-row"><span class="sk-n">C</span><div class="sk-track"><div class="sk-fill" data-w=".88"></div></div></div>
+        <div class="sk-row"><span class="sk-n">Python</span><div class="sk-track"><div class="sk-fill" data-w=".75"></div></div></div>
+        <div class="sk-row"><span class="sk-n">SystemVerilog / HDL</span><div class="sk-track"><div class="sk-fill" data-w=".80"></div></div></div>
+        <div class="sk-row"><span class="sk-n">RISC-V Assembly</span><div class="sk-track"><div class="sk-fill" data-w=".72"></div></div></div>
+      </div>
+      <div class="sk-col rv d1">
+        <div class="sk-ct">Architecture & Systems</div>
+        <div class="sk-row"><span class="sk-n">Processor Design</span><div class="sk-track"><div class="sk-fill" data-w=".88"></div></div></div>
+        <div class="sk-row"><span class="sk-n">Pipeline & Hazard Logic</span><div class="sk-track"><div class="sk-fill" data-w=".85"></div></div></div>
+        <div class="sk-row"><span class="sk-n">Performance Modeling</span><div class="sk-track"><div class="sk-fill" data-w=".78"></div></div></div>
+        <div class="sk-row"><span class="sk-n">OOP &amp; Design Patterns</span><div class="sk-track"><div class="sk-fill" data-w=".83"></div></div></div>
+        <div class="sk-row"><span class="sk-n">RISC-V ISA</span><div class="sk-track"><div class="sk-fill" data-w=".86"></div></div></div>
+      </div>
+      <div class="sk-col rv d2">
+        <div class="sk-ct">Coursework</div>
+        <div class="sk-row"><span class="sk-n">Processor Architecture</span><div class="sk-track"><div class="sk-fill" data-w=".90"></div></div></div>
+        <div class="sk-row"><span class="sk-n">Digital Systems</span><div class="sk-track"><div class="sk-fill" data-w=".85"></div></div></div>
+        <div class="sk-row"><span class="sk-n">Statistical Methods / AI</span><div class="sk-track"><div class="sk-fill" data-w=".75"></div></div></div>
+        <div class="sk-row"><span class="sk-n">Neural Networks</span><div class="sk-track"><div class="sk-fill" data-w=".70"></div></div></div>
+        <div class="sk-row"><span class="sk-n">Data Structures &amp; Algorithms</span><div class="sk-track"><div class="sk-fill" data-w=".88"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLL STRIP -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-t" id="stripTrack">
+      <div class="sc"><div class="sc-ic">⚙️</div><div class="sc-tt">Microarchitecture</div><div class="sc-bd">Designing processors that handle speculation, forwarding, and hazards correctly.</div></div>
+      <div class="sc"><div class="sc-ic">📊</div><div class="sc-tt">Performance Modeling</div><div class="sc-bd">Moving beyond traces to execution-driven simulation of real processor behavior.</div></div>
+      <div class="sc"><div class="sc-ic">🔧</div><div class="sc-tt">Systems C++</div><div class="sc-bd">Writing efficient, extensible C++ for large codebases with clean interfaces.</div></div>
+      <div class="sc"><div class="sc-ic">🧩</div><div class="sc-tt">Design Patterns</div><div class="sc-bd">Self-registering factories, interface-driven development, decoupled architectures.</div></div>
+      <div class="sc"><div class="sc-ic">📦</div><div class="sc-tt">Open Source</div><div class="sc-bd">Contributing to RISC-V tooling through LFX Mentorship and public projects.</div></div>
+      <div class="sc"><div class="sc-ic">🎓</div><div class="sc-tt">Research Mindset</div><div class="sc-bd">Thinking carefully about models, assumptions, and the gap between theory and silicon.</div></div>
+      <div class="sc"><div class="sc-ic">⚙️</div><div class="sc-tt">Microarchitecture</div><div class="sc-bd">Designing processors that handle speculation, forwarding, and hazards correctly.</div></div>
+      <div class="sc"><div class="sc-ic">📊</div><div class="sc-tt">Performance Modeling</div><div class="sc-bd">Moving beyond traces to execution-driven simulation of real processor behavior.</div></div>
+      <div class="sc"><div class="sc-ic">🔧</div><div class="sc-tt">Systems C++</div><div class="sc-bd">Writing efficient, extensible C++ for large codebases with clean interfaces.</div></div>
+      <div class="sc"><div class="sc-ic">🧩</div><div class="sc-tt">Design Patterns</div><div class="sc-bd">Self-registering factories, interface-driven development, decoupled architectures.</div></div>
+      <div class="sc"><div class="sc-ic">📦</div><div class="sc-tt">Open Source</div><div class="sc-bd">Contributing to RISC-V tooling through LFX Mentorship and public projects.</div></div>
+      <div class="sc"><div class="sc-ic">🎓</div><div class="sc-tt">Research Mindset</div><div class="sc-bd">Thinking carefully about models, assumptions, and the gap between theory and silicon.</div></div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="sec" aria-labelledby="projects-heading">
+    <div class="pj-head">
+      <div>
+        <div class="s-lbl rv">03 — Work</div>
+        <h2 class="s-ttl rv d1" id="projects-heading">SELECTED<br /><span class="d">PROJECTS</span></h2>
+      </div>
+      <div class="pj-tot rv" aria-label="Total projects">03</div>
+    </div>
+    <div class="filt rv" role="group" aria-label="Filter projects">
+      <button class="fb on" data-f="all">All</button>
+      <button class="fb" data-f="arch">Architecture</button>
+      <button class="fb" data-f="cpp">C++</button>
+      <button class="fb" data-f="oss">Open Source</button>
+    </div>
+    <div id="pjlist" role="list">
+
+      <article class="pj-row rv" data-cat="arch cpp" role="listitem">
+        <div class="pj-nb" aria-hidden="true">01</div>
+        <div>
+          <h3 class="pj-tt">RISC-V Pipelined Processor</h3>
+          <p class="pj-dc">Designed and verified a 5-stage pipelined RISC-V processor from scratch — including hazard detection, data forwarding, branch prediction, and full control logic.</p>
+        </div>
+        <div class="pj-r">
+          <div class="tags"><span class="tg">SystemVerilog</span><span class="tg">RISC-V</span><span class="tg">Architecture</span></div>
+          <a href="https://github.com/manikya-pant" class="pj-lnk" target="_blank" rel="noopener">View ↗</a>
+        </div>
+      </article>
+
+      <article class="pj-row rv d1" data-cat="arch cpp oss" role="listitem">
+        <div class="pj-nb" aria-hidden="true">02</div>
+        <div>
+          <h3 class="pj-tt">Olympia — Execution Driven Simulation</h3>
+          <p class="pj-dc">Adding execution-driven simulation support to the Olympia RISC-V performance model (LFX Mentorship). Designing a functional driver interface keeping the performance model fully driver-independent.</p>
+        </div>
+        <div class="pj-r">
+          <div class="tags"><span class="tg">C++</span><span class="tg">Sparta</span><span class="tg">LFX</span></div>
+          <a href="https://github.com/riscv-software-src/riscv-perf-model" class="pj-lnk" target="_blank" rel="noopener">View ↗</a>
+        </div>
+      </article>
+
+      <article class="pj-row rv d2" data-cat="cpp" role="listitem">
+        <div class="pj-nb" aria-hidden="true">03</div>
+        <div>
+          <h3 class="pj-tt">Shape Registry — Design Patterns</h3>
+          <p class="pj-dc">Implemented a self-registering factory registry using static initialization in C++. Each class registers itself — the main program stays fully decoupled from all concrete types, making extension trivial.</p>
+        </div>
+        <div class="pj-r">
+          <div class="tags"><span class="tg">C++</span><span class="tg">OOP</span><span class="tg">Patterns</span></div>
+          <a href="https://github.com/manikya-pant" class="pj-lnk" target="_blank" rel="noopener">View ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="sec" aria-labelledby="timeline-heading">
+    <div class="s-lbl rv">04 — Experience</div>
+    <h2 class="s-ttl rv d1" id="timeline-heading">CAREER<br /><span class="d">PATH</span></h2>
+    <ol class="tl" aria-label="Career timeline">
+
+      <li class="tl-i rv">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <time class="tl-yr" datetime="2024">2024 — Present</time>
+        <div class="tl-role">LFX Mentee — Olympia Performance Model</div>
+        <div class="tl-co">RISC-V International · Remote</div>
+        <p class="tl-dc">Working on adding execution-driven simulation support to the Olympia RISC-V performance model. Designing a clean functional driver interface so the performance model stays independent of the execution backend — enabling real speculation and misprediction effects to be modeled accurately.</p>
+      </li>
+
+      <li class="tl-i rv d1">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <time class="tl-yr" datetime="2022">2022 — Present</time>
+        <div class="tl-role">Dual Degree Student — B.Tech + MS</div>
+        <div class="tl-co">IIIT Hyderabad · Hyderabad, India</div>
+        <p class="tl-dc">Specialising in Electronics and Communication Engineering with a focus on processor microarchitecture and systems software. Key coursework: processor architecture, digital systems, statistical methods in AI, and neural networks.</p>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="ct-glow" aria-hidden="true"></div>
+    <div class="ct-lbl rv">05 — Let's Connect</div>
+    <h2 class="ct-h rv d1" id="contact-heading">
+      GET IN
+      <span class="out">TOUCH</span>
+    </h2>
+    <a href="mailto:manikya.pant@research.iiit.ac.in" class="ct-em rv d2">
+      manikya.pant@research.iiit.ac.in ↗
+    </a>
+    <nav class="socials rv d3" aria-label="Social links">
+      <a href="https://github.com/ManikyaPant" class="sl" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://in.linkedin.com/in/manikya-pant-8b6a572a0" class="sl" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:manikya.pant@research.iiit.ac.in" class="sl">Email</a>
+    </nav>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="f-logo">MP<em>.</em></div>
+    <p class="f-copy">© <span id="year"></span> Manikya Pant. All rights reserved.</p>
+    <div class="f-st"><div class="pdot" aria-hidden="true"></div>Open to Opportunities</div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
